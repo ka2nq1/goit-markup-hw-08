@@ -1,6 +1,18 @@
 .works {
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding-top: 50px;
     padding-bottom: 94px;
+  }
 }
 
 .works-list {
@@ -11,7 +23,10 @@
     &-item {
         background-color: $text-color-dark-theme;
         border: 1px solid #eeeeee;
-        max-width: 370px;
+
+        @media screen and (max-width: 767px) {
+          min-width: 450px;
+        }
 
         &:hover,
         &:focus {
@@ -24,6 +39,22 @@
 
     &-item:not(:nth-last-child(-n + 3)) {
         margin-bottom: 30px;
+    }
+
+    &-item:last-child {
+      @media screen and (min-width: $tablet) {
+        margin-top: 30px;  
+      }
+
+      @media screen and (min-width: $desktop) {
+        margin-top: 0;
+      }
+    }
+
+    &-item:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
     }
 }
 
@@ -74,14 +105,43 @@
 
       &-text {
         display: block;
-        margin: 63px 24px 63px 24px;
         font-style: $font-style;
         font-weight: $font-weight-small;
-        width: 322px;
+        width: 100%;
         font-size: 18px;
         line-height: 1.556;
         letter-spacing: 0.03em;
         color: $text-color-dark-theme;
+
+        @media screen and (max-width: 767px) {
+          margin: 77px 24px 77px 24px;
+        }
+
+        @media screen and (min-width: $tablet) {
+          margin: 49px 24px 49px 24px;
+          width: 306px;
+        }
+
+        @media screen and (min-width: $desktop) {
+          margin: 63px 24px 63px 24px;
+          width: 322px;
+        }
       }
     }   
+}
+
+.works-hidden-img {
+  @media screen and (max-width: 767px) {
+    min-width: 450px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
 }

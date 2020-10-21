@@ -1,5 +1,9 @@
 .filters {
     padding-top: 94px;
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+    }
 }
 
 .filters-list {
@@ -8,6 +12,11 @@
     max-width: 611px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: start;
+    }
 }
 
 .filters-list-item-btn {
@@ -38,4 +47,17 @@
       outline: none;
       cursor: pointer;
     }
+}
+
+.filters-list-item:not(:last-child) {
+
+    @media screen and (max-width: 767px) {
+      margin-right: 8px;
+    }
+}
+
+.filters-list-item:nth-child(-n+3) {
+  @media screen and (max-width: 767px){
+    margin-bottom: 15px;
+  }
 }

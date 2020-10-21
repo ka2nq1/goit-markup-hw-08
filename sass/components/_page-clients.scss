@@ -1,0 +1,95 @@
+.clients {
+    padding: 60px 0 60px 0;
+
+    &-title {
+        @extend %title;
+        margin: 0 0 30px 0;
+        
+        @media screen and (min-width: $desktop) {
+          margin-bottom: 50px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 94px 0 94px 0;
+    }
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
+}
+
+.clients-list-item {
+  margin: 15px;
+}
+
+.clients-icon-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 90px;
+    border: solid 1px #afb1b8;
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      transition-timing-function: $timing-function;
+    }
+    
+    &:hover .clients-svg,
+    &:focus .clients-svg {
+      fill: $accent-color;
+      transition-timing-function: $timing-function;
+    }   
+}
+
+.clients-svg {
+    fill: #afb1b8;
+}
+
+.clients-icon-bg-ya-co {
+    width: 44.27px;
+    height: 49.23px;
+}
+
+.clients-icon-bg-tagline-here {
+  width: 40px;
+  height: 52px;
+}
+
+.clients-icon-bg-company {
+  width: 41px;
+  height: 42.6px;
+}
+
+.clients-icon-bg-foster {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.clients-icon-bg-brand {
+  width: 59px;
+  height: 47px;
+}
+
+.clients-icon-bg-tagline {
+  width: 88.48px;
+  height: 45.44px;
+}

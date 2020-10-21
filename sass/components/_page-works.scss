@@ -1,0 +1,87 @@
+.works {
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    &-item {
+        background-color: $text-color-dark-theme;
+        border: 1px solid #eeeeee;
+        max-width: 370px;
+
+        &:hover,
+        &:focus {
+          transition-timing-function: $timing-function;
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+          cursor: pointer;
+        }
+    }
+
+    &-item:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 30px;
+    }
+}
+
+.works-list-item-title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 24px;
+    font-style: $font-style;
+    font-weight: $font-weight-big;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $text-general-color-light-theme;
+}
+
+.works-list-item-filter {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    font-style: $font-style;
+    font-weight: $font-weight-small;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $text-second-color-light-theme;
+}
+
+.works-hidden {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .works-hidden-overlay,
+    &:focus .works-hidden-overlay {
+      transform: translatey(0%);
+      transition-timing-function: $timing-function;
+    }
+
+    &-overlay {
+      position: absolute;
+      text-align: left;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(33, 150, 243, 0.9);
+      transform: translatey(100%);
+      transition: transform 250ms ease;
+
+      &-text {
+        display: block;
+        margin: 63px 24px 63px 24px;
+        font-style: $font-style;
+        font-weight: $font-weight-small;
+        width: 322px;
+        font-size: 18px;
+        line-height: 1.556;
+        letter-spacing: 0.03em;
+        color: $text-color-dark-theme;
+      }
+    }   
+}

@@ -1,0 +1,30 @@
+* {
+    font-family: roboto;
+    transition-duration: 250ms;
+  }
+
+  .item {
+    list-style-type: none;
+  }
+
+  .list {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .btn {
+      @extend %btn;
+      &:hover {
+          @extend %btn-hover;
+      }
+  }
+
+  img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+  }

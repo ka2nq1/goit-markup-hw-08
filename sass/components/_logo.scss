@@ -1,0 +1,69 @@
+.header-logo {
+    font-family: $logo-font;
+    font-style: $font-style;
+    font-weight: $font-weight-big;
+    font-size: 24px;
+    font-weight: 1.166666;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    max-width: 145px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 26px;
+      line-height: 1.192;
+      margin-right: 93px;
+    }
+
+    &-studio {
+        color: $text-general-color-light-theme;
+        font-family: $logo-font;
+        font-style: $font-style;
+        font-weight: $font-weight-big;
+        font-size: 24px;
+        font-weight: 1.166666;
+        letter-spacing: 0.03em;
+
+        @media screen and (min-width: $desktop) {
+          font-size: 26px;
+          line-height: 1.192;
+        }
+    }
+}
+
+.footer-logo {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-family: $logo-font;
+  font-style: $font-style;
+  font-weight: $font-weight-big;
+  font-size: 24px;
+  font-weight: 1.166666;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  max-width: 145px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.192;
+  }
+
+  .footer-logo-studio {
+    color: $text-color-dark-theme;
+    font-family: $logo-font;
+    font-style: $font-style;
+    font-weight: $font-weight-big;
+    font-size: 24px;
+    font-weight: 1.166666;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 26px;
+      line-height: 1.192;
+    }
+  }
+}
+

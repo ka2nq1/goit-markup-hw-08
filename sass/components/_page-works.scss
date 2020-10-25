@@ -100,6 +100,9 @@
     &-overlay {
       position: absolute;
       text-align: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
       top: 0;
@@ -107,28 +110,39 @@
       background: rgba(33, 150, 243, 0.9);
       transform: translatey(100%);
       transition: transform 250ms ease;
+      padding: 25px 20px 25px 20px;
+
+      @media screen and (min-width: $mobile) {
+      padding: 77px 24px 77px 24px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding: 49px 24px 49px 24px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        padding: 63px 24px 63px 24px;
+      }
 
       &-text {
         display: block;
         font-style: $font-style;
         font-weight: $font-weight-small;
         width: 100%;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 1.556;
         letter-spacing: 0.03em;
         color: $text-color-dark-theme;
 
         @media screen and (min-width: $mobile) {
-          margin: 77px 24px 77px 24px;
+          font-size: 18px;
         }
 
         @media screen and (min-width: $tablet) {
-          margin: 49px 24px 49px 24px;
           width: 306px;
         }
 
         @media screen and (min-width: $desktop) {
-          margin: 63px 24px 63px 24px;
           width: 322px;
         }
       }

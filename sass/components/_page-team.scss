@@ -1,5 +1,4 @@
 .team {
-    min-width: 480px;
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #f5f4fa;
@@ -48,6 +47,7 @@
 
         @media screen and (max-width: 767px) {
             max-width: 450px;
+            margin: 0 auto;
         }
 
         @media screen and (min-width: $tablet) {

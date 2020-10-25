@@ -24,8 +24,13 @@
         background-color: $text-color-dark-theme;
         border: 1px solid #eeeeee;
 
+        @media screen and (max-width: $mobile) {
+          width: 100%;
+        }
+
         @media screen and (max-width: 767px) {
-          min-width: 450px;
+          margin: 0 auto;
+          width: 450px;
         }
 
         &:hover,
@@ -113,7 +118,7 @@
         letter-spacing: 0.03em;
         color: $text-color-dark-theme;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: $mobile) {
           margin: 77px 24px 77px 24px;
         }
 
@@ -131,8 +136,8 @@
 }
 
 .works-hidden-img {
-  @media screen and (max-width: 767px) {
-    min-width: 450px;
+  @media screen and (min-width: $mobile) {
+    max-width: 450px;
     height: 294px;
   }
 

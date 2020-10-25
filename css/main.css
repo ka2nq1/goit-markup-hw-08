@@ -32,7 +32,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -911,7 +911,7 @@ summary {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/imgx1/hero-mobile1x.jpg);
     padding-top: 118px;
     padding-bottom: 118px;
-    min-width: 480px;
+    max-width: 768px;
     height: 400px;
   }
 }
@@ -966,19 +966,25 @@ summary {
   margin-left: auto;
   font-style: normal;
   font-weight: 900;
-  width: 696px;
-  font-size: 44px;
-  line-height: 1.364;
+  min-width: 320px;
+  font-size: 26px;
+  line-height: 1.61538;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   #hero-title {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.61538;
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero-title {
+    min-width: 696px;
+    line-height: 1.364;
+    font-size: 44px;
   }
 }
 
@@ -1315,6 +1321,8 @@ summary {
   .feature-list {
     display: block;
     max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1342,15 +1350,18 @@ summary {
   margin: 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .feature-list-item {
     width: 450px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .feature-list-item {
     width: 354px;
+    margin: 15px;
   }
 }
 
@@ -1400,7 +1411,7 @@ summary {
           align-items: center;
   background-color: #f5f4fa;
   border-radius: 4px;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
 }
@@ -1411,6 +1422,12 @@ summary {
 .feature-list-item-bg .feature-svg-clock {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (min-width: 480px) {
+  .feature-list-item-bg {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1476,7 +1493,6 @@ summary {
 }
 
 .team {
-  min-width: 480px;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
@@ -1545,6 +1561,7 @@ summary {
 @media screen and (max-width: 767px) {
   .team-list-item {
     max-width: 450px;
+    margin: 0 auto;
   }
 }
 
@@ -1670,7 +1687,11 @@ summary {
 
 @media screen and (max-width: 767px) {
   .clients-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -1759,7 +1780,7 @@ summary {
   margin-left: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1804,7 +1825,7 @@ summary {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 60px;
-    min-width: 354px;
+    max-width: 354px;
   }
 }
 
@@ -1997,6 +2018,12 @@ summary {
           flex-direction: column;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-container-input {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-container-input {
     -webkit-box-align: center;
@@ -2012,19 +2039,26 @@ summary {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
   background: transparent;
+  width: 320px;
   padding: 15px 16px;
-  margin-right: 12px;
   color: #ffffff;
+  margin-bottom: 20px;
   outline: 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .footer-form-input {
     width: 450px;
     margin-right: 0;
-    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -2205,9 +2239,16 @@ summary {
   border: 1px solid #eeeeee;
 }
 
+@media screen and (max-width: 480px) {
+  .works-list-item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .works-list-item {
-    min-width: 450px;
+    margin: 0 auto;
+    width: 450px;
   }
 }
 
@@ -2305,7 +2346,7 @@ summary {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .works-hidden-overlay-text {
     margin: 77px 24px 77px 24px;
   }
@@ -2325,9 +2366,9 @@ summary {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .works-hidden-img {
-    min-width: 450px;
+    max-width: 450px;
     height: 294px;
   }
 }

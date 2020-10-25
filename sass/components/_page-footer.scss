@@ -4,7 +4,7 @@
     margin-left: auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    min-width: 480px;
+    width: 100%;
 
     &-container {
         @media screen and (max-width: 1199px) {
@@ -29,7 +29,7 @@
             flex-direction: column;
             justify-content: center;
             margin-bottom: 60px;
-            min-width: 354px;
+            max-width: 354px;
         }
 
         @media screen and (min-width: $desktop) {
@@ -180,6 +180,10 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+
     @media screen and (max-width: 1199px) {
         align-items: center;
     }
@@ -191,17 +195,22 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
     background: transparent;
+    width: 320px;
     padding: 15px 16px;
-    margin-right: 12px;
     color: $text-color-dark-theme;
+    margin-bottom: 20px;
     outline: 0;
     
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: $mobile) {
         width: 450px;
         margin-right: 0;
-        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
     }
 
     &::placeholder {

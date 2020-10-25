@@ -25,7 +25,7 @@
           url(../img/imgx1/hero-mobile1x.jpg);
         padding-top: 118px;
         padding-bottom: 118px;
-        min-width: 480px;
+        max-width: 768px;
         height: 400px;
       }
 
@@ -104,17 +104,21 @@ screen and (min-resolution: 2dppx) {
     margin-left: auto;
     font-style: $font-style;
     font-weight: $font-weight-hero;
-    width: 696px;
-    font-size: 44px;
-    line-height: 1.364;
+    min-width: 320px;
+    font-size: 26px;
+    line-height: 1.61538;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $text-color-dark-theme;
 
-    @media screen and (max-width: 1199px) {
-      width: 360px;
-      font-size: 26px;
-      line-height: 1.61538;
+    @media screen and (min-width: $mobile) {
+      max-width: 360px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      min-width: 696px;
+      line-height: 1.364;
+      font-size: 44px;
     }
 }  
 

@@ -4,15 +4,15 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (max-width: $mobile) {
-      max-width: $mobile;
+  @media screen and (min-width: $mobile) {
+    width: 300px;
   }
 
   @media screen and (min-width: $tablet) {
-      width: $tablet;
+    width: 720px;
   }
 
   @media screen and (min-width: $desktop) {
-      width: $desktop;
+    width: 1080px;
   }
 }
